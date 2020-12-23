@@ -1,0 +1,30 @@
+
+<nav>
+  <div class="nav-wrapper theme-color-b1 left-right_padding_10p">
+    <a routerLink="/home" class="brand-logo" data-aos="fade-down" data-aos-duration="1000">CodeX</a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li *ngIf="!currentUser"><a routerLink="/welcome" data-aos="fade-down" data-aos-duration="1100">Home</a></li>
+      <li *ngIf="!currentUser"><a routerLink="/login" data-aos="fade-down" data-aos-duration="1100">Login</a></li>
+      <li *ngIf="!currentUser"><a routerLink="/signup" data-aos="fade-down" data-aos-duration="1600" class="waves-effect waves-light btn theme-color-b1 signup_btn">Sign Up</a></li>
+      <li *ngIf="currentUser"><a  class="tooltipped" materialize="tooltip" data-position="bottom" data-delay="50" data-tooltip="Dashboard" routerLink="/user/dashboard"><i class="material-icons">dashboard</i></a></li>
+      <li *ngIf="currentUser"><a  class="tooltipped" materialize="tooltip" data-position="bottom" data-delay="50" data-tooltip="Logout" (click)="logoutFunc()"><i class="material-icons">power_settings_new</i></a></li>
+    </ul>
+
+    <ul class="side-nav theme-color-b1 white-text" id="mobile-demo">
+      <br>
+      <br>
+      <li *ngIf="!currentUser"><a class="white-text" routerLink="/welcome">Home</a></li>
+      <li *ngIf="!currentUser"><a class="white-text" routerLink="/login">Log In</a></li>
+      <li *ngIf="!currentUser"><a class="white-text" routerLink="/signup" class="waves-effect waves-light btn theme-color-b1 signup_btn">Sign Up</a></li>
+      <li *ngIf="currentUser"><a  class="white-text" routerLink="/user/dashboard">Dashboard<i class="white-text material-icons left">dashboard</i></a></li>
+      <li *ngIf="currentUser"><a  class="white-text" (click)="logoutFunc()">Logout<i class="white-text material-icons left">power_settings_new</i></a></li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+<div class="fixed-action-btn">
+    <a id="back-to-top" class="btn-floating btn-large theme-color-b2 scale-transition">
+      <i class="large material-icons">keyboard_arrow_up</i>
+    </a>
+  </div>

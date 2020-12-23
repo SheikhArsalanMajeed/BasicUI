@@ -1,0 +1,193 @@
+body
+{
+    font-family: 'Open Sans', sans-serif;
+}
+@media only screen and (max-width: 992px)
+{
+    nav .brand-logo
+     {
+        left: 40%;
+        font-size: 1.4rem;
+     }
+     .force-overflow
+    {
+        min-height: 80px !important;
+    }
+    .scrollbar
+    {
+        height: 80px !important;
+        overflow-y: scroll;
+    }
+
+}
+@media only screen and (max-width: 1100px)
+{
+    .mail_img
+    {
+        width: 260px !important;
+    }
+
+}
+/* Custom Color */
+.theme-color-b1
+{
+    background-color: #01579b !important;
+}
+.theme-color-b2
+{
+    background-color:  #0091ea !important;
+}
+.theme-color-b3
+{
+    /* background-color:  #ccdde5 !important; */
+    background-color: #040a0c!important;
+  }
+.footer-color{
+    background-color: #363636 !important;
+  }
+  .footer-color2{
+    background-color: #1f1f1f!important;
+  }
+.theme-textcolor-b1
+{
+    color: #01579b !important;
+}
+/* End */
+
+/* Sign Up */
+.signup_btn:hover
+{
+    background-color: #0091ea !important;
+    border: 0.5px solid #0091ea;
+}
+.signup_btn
+{
+    border: 0.5px solid;
+}
+.signup_btn:focus
+{
+    background-color: #0091ea !important;
+    border: 0.5px solid #0091ea;
+}
+/* End */
+
+/* General Materialize Code */
+.collection {
+    border: 1px solid #e0e0e000;
+  }
+.btn-floating:hover,.btn:hover ,.btn:focus, .btn-large:focus, .btn-floating:focus
+{
+    background-color: #0091ea;
+}
+p
+{
+font-size: 16.5px;
+}
+.input-field input[type=email]:focus + label, .input-field input[type=password]:focus + label, .input-field input[type=text]:focus + label, .input-field input[type=number]:focus + label, .input-field .materialize-textarea:focus + label  {
+    color: #0091ea !important;
+}
+
+/* label underline focus color */
+.input-field input[type=email]:focus, .input-field input[type=password]:focus, .input-field input[type=text]:focus, .input-field input[type=number]:focus, .input-field .materialize-textarea:focus {
+box-shadow: 0 1px 0 0 #0091ea !important;
+border-bottom: 1px solid #0091ea !important;
+}
+
+/* valid color */
+.input-field input[type=email].valid, .input-field input[type=password].valid, .input-field input[type=text].valid, .input-field input[type=number].valid {
+box-shadow: 0 1px 0 0 #0091ea !important;
+border-bottom: 1px solid #0091ea !important;
+}
+
+/* invalid color */
+.input-field input[type=email].invalid, .input-field input[type=password].invalid, .input-field input[type=text].invalid, .input-field input[type=number].invalid {
+box-shadow: 0 1px 0 0 #0091ea !important;
+border-bottom: 1px solid #0091ea !important;
+}
+/* Parallex Size Define */
+.parallax-container
+{
+    height: 800px;
+    width: 100%;
+}
+/* End */
+
+/* Custom Css */
+.margin-top_10
+{
+    margin-top: 10%;
+}
+.black_outline
+{
+  border: 2px solid black;
+}
+.round_btn
+{
+  border-radius: 25px;
+  height: 50px;
+  line-height: 50px;
+}
+.round_btn:focus
+{
+    background-color: #01579b;
+}
+.margin-0px
+{
+    margin: 0px;
+}
+.left-right_padding_10p
+{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.font-size_13px
+{
+    font-size: 13px !important;
+}
+/* End */
+.btn2:hover
+{
+    background-color: #01579b !important;
+    border: 0.5px solid #01579b;
+    color: white;
+}
+.btn2
+{
+  background-color:white;
+    border: 0.5px solid;
+    color: #01579b;
+}
+
+a{
+    cursor: pointer;
+}
+.font-size_22px
+{
+  font-size: 18px
+}
+.blue_outline
+{
+  border: 1.5px solid #01579b !important;
+}
+.blink_down {
+animation: blinker 5s linear infinite;
+}
+@keyframes blinker {
+50% { opacity: 1; color: rgb(248, 0, 0)}
+100% { opacity: 1; }
+}
+
+.blink_up {
+    animation: blinker_1 0.5s linear infinite;
+}
+@keyframes blinker_1 {
+50% { opacity: 0}
+}
+select
+{
+    border: 1.5px solid #01579b !important;
+}
+.margin-top_10p
+{
+    margin-top: 5%;
+}
